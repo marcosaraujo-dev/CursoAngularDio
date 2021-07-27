@@ -1,3 +1,4 @@
+import { ValidarCamposService } from './../../shared/components/campos/validar-campos.service';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
@@ -10,8 +11,11 @@ export class CadastroFilmesComponent implements OnInit {
 
   cadastroFilme: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(public validacao: ValidarCamposService, private fb: FormBuilder) { }
 
+  get f(){
+      return this.cadastroFilme.controls;
+  }
   ngOnInit() {
 
     this.cadastroFilme = this.fb.group({
@@ -25,7 +29,10 @@ export class CadastroFilmesComponent implements OnInit {
     });
 
   }
+
+
   salvar(): void{
+    this.cadastroFilme.markAllAsTouched();
     if(this.cadastroFilme.invalid){
       return;
     }
