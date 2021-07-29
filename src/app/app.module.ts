@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -27,7 +28,8 @@ import { AlertaComponent } from './shared/components/alerta/alerta.component';
     HttpClientModule,
     LayoutModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   entryComponents: [AlertaComponent],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt' }],

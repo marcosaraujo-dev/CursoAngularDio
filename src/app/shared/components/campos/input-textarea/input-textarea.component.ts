@@ -3,7 +3,7 @@ import { FormGroup, AbstractControl } from '@angular/forms';
 import { ValidarCamposService } from '../validar-campos.service';
 
 @Component({
-  selector: 'dio-input-textarea',
+  selector: 'mas-input-textarea',
   templateUrl: './input-textarea.component.html',
   styleUrls: ['./input-textarea.component.css']
 })

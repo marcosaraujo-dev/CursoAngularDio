@@ -9,6 +9,6 @@
             (click)="picker.open()">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
-  <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Campo obrigatório</mat-error>
+  <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Este campo é obrigatório</mat-error>
   </mat-form-field>
 </div>

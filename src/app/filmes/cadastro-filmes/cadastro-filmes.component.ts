@@ -1,17 +1,22 @@
+import { Genero } from './../../domain/genero';
+import { DataserviceService } from './../../dataservice.service';
 import { ValidarCamposService } from './../../shared/components/campos/validar-campos.service';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'dio-cadastro-filmes',
+  selector: 'mas-cadastro-filmes',
   templateUrl: './cadastro-filmes.component.html',
-  styleUrls: ['./cadastro-filmes.component.scss']
+  styleUrls: ['./cadastro-filmes.component.scss'],
+  providers:[DataserviceService]
 })
 export class CadastroFilmesComponent implements OnInit {
 
   cadastroFilme: FormGroup;
+  generoFilme: Genero[];
+  constructor(public validacao: ValidarCamposService, private fb: FormBuilder, private dataService:DataserviceService) {
 
-  constructor(public validacao: ValidarCamposService, private fb: FormBuilder) { }
+   }
 
   get f(){
       return this.cadastroFilme.controls;
@@ -27,7 +32,7 @@ export class CadastroFilmesComponent implements OnInit {
       urlIMDB:['',[Validators.minLength(10)]],
       genero:['',[Validators.required]]
     });
-
+    this.generoFilme = this.dataService.getGeneros();
   }
 
 

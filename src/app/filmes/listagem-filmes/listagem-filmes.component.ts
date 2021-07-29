@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'dio-listagem-filmes',
+  selector: 'mas-listagem-filmes',
   templateUrl: './listagem-filmes.component.html',
   styleUrls: ['./listagem-filmes.component.scss']
 })
