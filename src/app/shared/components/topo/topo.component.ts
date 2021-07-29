@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
-  selector: 'dio-topo',
+  selector: 'mas-topo',
   templateUrl: './topo.component.html',
   styleUrls: ['./topo.component.scss']
 })

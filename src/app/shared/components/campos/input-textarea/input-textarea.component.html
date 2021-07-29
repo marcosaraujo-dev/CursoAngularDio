@@ -5,7 +5,7 @@
             [name]="controlName"
             [formControlName]="controlName">
     </textarea>
-    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Campo obrigatório</mat-error>
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Este campo é obrigatório</mat-error>
     <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'minlength')">
       Campo precisa ter no mínimo {{validacao.lengthValidar(formControl, 'minlength')}} caracteres
     </mat-error>
