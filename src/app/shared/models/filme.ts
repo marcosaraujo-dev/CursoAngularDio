@@ -2,9 +2,9 @@ export interface Filme {
   id?: number;
   titulo: string;
   urlFoto?: string;
-  dtLancamento: Date;
+  dataLancamento: Date;
   descricao?: string;
-  nota: number;
-  urlImdb?: string;
+  notaIMDb: number;
+  urlIMDb?: string;
   genero: string;
 }
