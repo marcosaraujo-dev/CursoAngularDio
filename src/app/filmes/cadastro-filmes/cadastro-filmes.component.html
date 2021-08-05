@@ -5,7 +5,7 @@
       autocomplete="off"
       novalidate
       [formGroup]="cadastroFilme"
-      (ngSubmit)="salvar()"
+      (ngSubmit)="submit()"
       (ngReset)="reiniciarForm()"
     >
       <mat-card-content>
@@ -36,14 +36,14 @@
         <mas-input-number
           titulo="Nota IMDB *"
           [formGroup]="cadastroFilme"
-          controlName="notaIMDB"
+          controlName="notaIMDb"
           step="0.1"
         ></mas-input-number>
 
         <mas-input-text
           titulo="Link IMDB"
           [formGroup]="cadastroFilme"
-          controlName="urlIMDB"
+          controlName="urlIMDb"
         ></mas-input-text>
         <mas-input-select
           titulo="Gênero *"
