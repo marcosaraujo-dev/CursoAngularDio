@@ -1,7 +1,7 @@
 import { ConfigParamsService } from './config-params.service';
 import { ConfigParams } from './../shared/models/config-params';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Filme } from '../shared/models/filme';
 
