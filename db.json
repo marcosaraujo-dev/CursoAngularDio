@@ -109,26 +109,6 @@
       "urlIMDb": "https://www.imdb.com/title/tt0117705",
       "genero": "Comédia",
       "id": 11
-    },
-    {
-      "titulo": "filme sem foto e descrição",
-      "urlFoto": "",
-      "dataLancamento": "2021-08-02T03:00:00.000Z",
-      "descricao": "",
-      "notaIMDb": 6,
-      "urlIMDb": "",
-      "genero": "Romance",
-      "id": 12
-    },
-    {
-      "titulo": "filme descrição longa e quebra de linha",
-      "urlFoto": "",
-      "dataLancamento": "2021-08-03T03:00:00.000Z",
-      "descricao": "descrição do título\nquebra de linha\nteste",
-      "notaIMDb": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 13
     }
   ]
 }
