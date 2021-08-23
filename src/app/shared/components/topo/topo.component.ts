@@ -12,8 +12,7 @@ export class TopoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 
   openSideNav() {
