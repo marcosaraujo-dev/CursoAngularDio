@@ -10,10 +10,10 @@ export class DataserviceService {
      new Genero('Ação', 'Ação' ),
      new Genero('Aventura', 'Aventura' ),
      new Genero('Ficção Científica', 'Ficção Científica' ),
-     new Genero('Romance','Romance'),
-     new Genero('Terror','Terror'),
-     new Genero('Comédia','Comédia'),
-     new Genero('Drama','Drama')
+     new Genero('Romance', 'Romance'),
+     new Genero('Terror', 'Terror'),
+     new Genero('Comédia', 'Comédia'),
+     new Genero('Drama', 'Drama')
     ];
   }
   constructor() { }
